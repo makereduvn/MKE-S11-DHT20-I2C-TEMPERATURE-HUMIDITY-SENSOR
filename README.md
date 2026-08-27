@@ -49,8 +49,8 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 
 ### Hướng dẫn kết nối
 - Cấp nguồn 5VDC cho mạch qua hai chân `GND` và `5V`
-- Kết nối chân `SCL` của Module với chân I2C Clock của mạch điều khiển.
-- Kết nối chân `SDA` của Module với chân I2C Data của mạch điều khiển.
+- Kết nối chân `SCL` của cảm biến với chân I2C Clock của mạch điều khiển.
+- Kết nối chân `SDA` của cảm biến với chân I2C Data của mạch điều khiển.
 
 ### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
 - Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
