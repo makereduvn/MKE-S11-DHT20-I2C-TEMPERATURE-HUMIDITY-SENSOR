@@ -40,7 +40,7 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 ## Các chân tín hiệu
 
 | MKE-S11 | Ghi chú                   |
-| ------- | ------------------------- |
+| :-------: | :------------------------- |
 | `-`     | Chân cấp nguồn âm 0VDC    |
 | `+`     | Chân cấp nguồn dương 5VDC |
 | `SDA`   | Chân tín hiệu I2C Serial Data|
