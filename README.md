@@ -24,8 +24,6 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 - Độ phân giải nhiệt độ: 0.01°C
 - Thời gian đáp ứng độ ẩm: < 8 giây
 - Thời gian đáp ứng nhiệt độ: 5 ~ 30 giây
-- Vật liệu: ABS + PC
-- Tín hiệu đầu ra: I2C
 - Khả năng tương thích:
   - Arduino
   - Raspberry Pi
