@@ -41,8 +41,8 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 
 | MKE-S11 | Ghi chú                   |
 | :-------: | :------------------------- |
-| `-`     | Chân cấp nguồn âm 0VDC    |
-| `+`     | Chân cấp nguồn dương 5VDC |
+| `GND`     | Chân cấp nguồn âm 0VDC    |
+| `5V`     | Chân cấp nguồn dương 5VDC |
 | `SDA`   | Chân tín hiệu I2C Serial Data|
 | `SCL`   | Chân tín hiệu I2C Serial Clock|
 
@@ -50,32 +50,32 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 ## Hướng dẫn sử dụng
 
 ### Hướng dẫn kết nối
-- Cấp nguồn 5VDC cho mạch qua hai chân - và +
-- Kết nối chân SCL của Module với chân I2C Clock của mạch điều khiển.
-- Kết nối chân SDA của Module với chân I2C Data của mạch điều khiển.
+- Cấp nguồn 5VDC cho mạch qua hai chân `GND` và `5V`
+- Kết nối chân `SCL` của Module với chân I2C Clock của mạch điều khiển.
+- Kết nối chân `SDA` của Module với chân I2C Data của mạch điều khiển.
 
 ### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
 - Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
-- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Sensor / MKE_S14_DHT11**
+- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Sensor / MKE_S11_DHT20**
 - Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port*- của mạch và nhấn **Upload*- để nạp chương trình.
-- Cấp nguồn 5VDC cho mạch, kết nối chân S (SIGNAL) của cảm biến với chân điều khiển được khai báo trong chương trình.
+- Cấp nguồn 5VDC cho mạch, kết nối chân `SDA` và `SCL` của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
 
 ### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
 
-- Khởi động [Microsoft MakeCode](https://makecode.microbit.org/) và **Import*- chương trình theo đường link sau: `https://github.com/makereduvn/mke_s14_dht11_microbit/`
+- Khởi động [Microsoft MakeCode](https://makecode.microbit.org/) và **Import*- chương trình theo đường link sau: `https://github.com/makereduvn/mke_s11_dht20_microbit/`
 - Kết nối mạch Micro:bit và **Download*- chương trình.
-- Cấp nguồn 5VDC cho mạch, kết nối chân S (SIGNAL) của cảm biến với chân điều khiển được khai báo trong chương trình.
+- Cấp nguồn 5VDC cho mạch, kết nối chân `SDA` và `SCL` của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
 
 Nếu bắt đầu tự án mới cần cài đặt Extension **MKE_ONE_MICROBIT*- trên [Microsoft MakeCode](https://makecode.microbit.org/) theo [hướng dẫn tại đây](https://github.com/makereduvn/MKE_ONE_MICROBIT). Sau khi cài đặt thành công, các khối lệnh của Extension **MKE_ONE_MICROBIT*- sẽ xuất hiện trong danh sách block và sẵn sàng để sử dụng.
 
 ## Kích thước sản phẩm
-![MKE-S14 DHT11](/extras/MKE-S14_1.jpg)
+![MKE-S11 DHT20](/extras/MKE-S11_1.jpg)
 
 ## Hình ảnh sản phẩm
-![MKE-S14 DHT11](/extras/MKE-S14_2.png)
-![MKE-S14 DHT11](/extras/MKE-S14_3.png)
+![MKE-S11 DHT20](/extras/MKE-S11_2.png)
+![MKE-S11 DHT20](/extras/MKE-S11_3.png)
 
 ## Miễn trừ trách nhiệm
 Sản phẩm này là bo mạch phát triển được thiết kế phục vụ cho mục đích nghiên cứu, thử nghiệm và học tập, không phải là một thiết bị hoàn chỉnh. Trong trường hợp người dùng kết hợp mạch này với các linh kiện, thiết bị hoặc phần mềm khác để tạo thành một hệ thống hoặc sản phẩm hoàn chỉnh, mọi chức năng và tính phù hợp của sản phẩm sau cùng đều thuộc trách nhiệm của người dùng.
