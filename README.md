@@ -27,42 +27,25 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 - Vật liệu: ABS + PC
 - Tín hiệu đầu ra: I2C
 - Khả năng tương thích:
- - Arduino
- - Raspberry Pi
- - Jetson Nano
- - Micro:bit
- - Và các board điều khiển 3.3/5VDC khác
+  - Arduino
+  - Raspberry Pi
+  - Jetson Nano
+  - Micro:bit
+  - Và các board điều khiển 3.3/5VDC khác
 - Thiết kế mạch:
- - Ổn định, chống nhiễu
- - Phù hợp cho ứng dụng học tập và thực tế
+  - Ổn định, chống nhiễu
+  - Phù hợp cho ứng dụng học tập và thực tế
 - Đi kèm cáp kết nối: 4P XH2.54 – Dupont
 
 ## Các chân tín hiệu
 
-<table><thead>
-  <tr>
-    <th>MKE-MS11</th>
-    <th>Ghi chú</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td>-</td>
-    <td>Chân cấp nguồn âm 0VDC</td>
-  </tr>
-  <tr>
-    <td>+</td>
-    <td>Chân cấp nguồn dương 5VDC</td>
-  </tr>
-  <tr>
-    <td>SDA</td>
-    <td>Chân tín hiệu I2C Serial Data</td>
-  </tr>
-  <tr>
-    <td>SCL</td>
-    <td>Chân tín hiệu I2C Serial Clock</td>
-  </tr>
-</tbody>
-</table>
+| MKE-S11 | Ghi chú                   |
+| ------- | ------------------------- |
+| `-`     | Chân cấp nguồn âm 0VDC    |
+| `+`     | Chân cấp nguồn dương 5VDC |
+| `SDA`   | Chân tín hiệu I2C Serial Data|
+| `SCL`   | Chân tín hiệu I2C Serial Clock|
+
 
 ## Hướng dẫn sử dụng
 
