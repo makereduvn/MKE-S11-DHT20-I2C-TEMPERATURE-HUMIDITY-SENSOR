@@ -13,7 +13,7 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 - Điện áp cấp nguồn: 5VDC
 - Chuẩn tín hiệu điều khiển: I2C
 - Điện áp giao tiếp: TTL 3.3 / 5VDC
-- Cảm biến sử dụng: DHT20
+- Cảm biến sử dụng: [DHT20 Temperature Humidity Sensor ASAIR](/extras/DHT20%20Datasheet.pdf)
 - Dải đo độ ẩm: 0 ~ 100% RH
 - Dải đo nhiệt độ: –40 ~ +80°C
 - Độ chính xác độ ẩm: ±3% RH (tại 25°C)
