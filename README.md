@@ -52,13 +52,42 @@ Sản phẩm phù hợp cho nhiều ứng dụng như **đo nhiệt độ – đ
 - Kết nối chân `SCL` của cảm biến với chân I2C Clock của mạch điều khiển.
 - Kết nối chân `SDA` của cảm biến với chân I2C Data của mạch điều khiển.
 
-### Hướng dẫn sử dụng với Arduino Uno / Vietduino Uno / ESP32
-- Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MKE_ONE" by MakerEdu.vn**
-- Mở chương trình mẫu tại **File / Examples / MKE_ONE / Sensor / MKE_S11_DHT20**
-- Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port*- của mạch và nhấn **Upload*- để nạp chương trình.
+### Hướng dẫn sử dụng với Arduino / ESP32
+- Trong Github của sản phẩm, chọn **<> Code / Download ZIP** để tải về bộ thư viện.
+- Mở chương trình Arduino, chọn **Sketch / Include Library / Add .ZIP Library** để cài đặt bộ thư viện.
+- Mở chương trình mẫu tại **File / Examples / MKE_S11_DHT20**
+- Cấu hình board mạch tương ứng là **Arduino Uno / ESP32**, chọn đúng cổng **COM Port** của mạch và nhấn **Upload** để nạp chương trình.
 - Cấp nguồn 5VDC cho mạch, kết nối chân `SDA` và `SCL` của cảm biến với chân điều khiển được khai báo trong chương trình.
 - Xem kết quả mạch hoạt động theo chương trình đã nạp.
 
+#### Chương trình mẫu cho Arduino Uno / ESP32:
+```ino
+#include "MKE_I2C_DHT20.h"
+
+MKE_I2C_DHT20 mySensor;
+
+void setup()
+{
+  Serial.begin(115200);
+  Wire.begin();
+  mySensor.begin();
+  delay(1000);
+}
+
+void loop()
+{
+  if (millis() - mySensor.lastRead() >= 1000)
+  {
+    mySensor.read();
+    Serial.print(F("Temperature: "));
+    Serial.print(mySensor.getTemperature());
+    Serial.print(F(" C\t"));
+    Serial.print(F("Humidity: "));
+    Serial.print(mySensor.getHumidity());
+    Serial.println(F(" %"));
+  }
+}
+```
 ### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
 
 - Khởi động [Microsoft MakeCode](https://makecode.microbit.org/) và **Import*- chương trình theo đường link sau: `https://github.com/makereduvn/mke_s11_dht20_microbit/`
